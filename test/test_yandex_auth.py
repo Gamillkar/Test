@@ -20,7 +20,7 @@ class test_auth_yandex(unittest.TestCase):
         auth.click()
         time.sleep(2)
 
-        #проверка что совершен переход на страницу ввода пороля(найдена графа "не помню пороль")
+        #проверка что совершен переход на страницу ввода пороля(найдена графа "не помню пароль")
         path_pass = '//*[@id="root"]/div/div/div[2]/div/div/div[3]/div[2]/div/div/form/div[2]/div/div[2]/a'
         password = self.driver.find_element_by_xpath(path_pass)
         self.assertIsNotNone(password)
